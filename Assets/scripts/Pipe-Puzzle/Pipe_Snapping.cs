@@ -2,41 +2,72 @@ using UnityEngine;
 
 public class Pipe_Snapping : MonoBehaviour
 {
+    [SerializeField] private Transform snapTarget;
+    [SerializeField] private float snapDistance = 0.15f;
+    [SerializeField, Range(0f, 45f)] private float snapAngle = 15f;
+    [SerializeField] private Transform[] connectionPoints;
+    [SerializeField] private string socketTag = "PipeSocket";
 
-    private bool isPuzzleCompleted = false;
+    private Rigidbody body;
+    private Manager_Pipe_Puzzle puzzleManager;
 
-    void Start()
+    public bool IsSnapped { get; private set; }
+    public Transform[] ConnectionPoints => connectionPoints ?? System.Array.Empty<Transform>();
+
+    private void Awake()
     {
-
+        body = GetComponent<Rigidbody>();
+        puzzleManager = GetComponentInParent<Manager_Pipe_Puzzle>();
     }
 
-    void Update()
+    private void OnTriggerStay(Collider other)
     {
-        CheckPipeConnections();
-    }
-
-    void CheckPipeConnections()
-    {
-        if (isPuzzleCompleted)
+        if (IsSnapped || snapTarget == null || other.gameObject.tag != socketTag)
         {
             return;
         }
 
-        // check if all pipes are connected
-        // if yes, call completePuzzle()
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Pipe"))
+        Transform socket = other.transform;
+        if (socket != snapTarget && !socket.IsChildOf(snapTarget) && !snapTarget.IsChildOf(socket))
         {
-            SnapPipe(other.gameObject);
+            return;
         }
+
+        if (Vector3.Distance(transform.position, snapTarget.position) > snapDistance ||
+            Quaternion.Angle(transform.rotation, snapTarget.rotation) > snapAngle)
+        {
+            return;
+        }
+
+        SnapToTarget();
     }
 
-    void SnapPipe(GameObject pipe)
+    public void SnapToTarget()
     {
-        // snap the pipe to the correct position
-        // play snapping sound
+        if (IsSnapped || snapTarget == null)
+        {
+            return;
+        }
+
+        transform.SetPositionAndRotation(snapTarget.position, snapTarget.rotation);
+        IsSnapped = true;
+
+        if (body != null)
+        {
+            body.linearVelocity = Vector3.zero;
+            body.angularVelocity = Vector3.zero;
+            body.isKinematic = true;
+        }
+
+        puzzleManager?.NotifyPieceSnapped(this);
+    }
+
+    public void ResetSnap()
+    {
+        IsSnapped = false;
+        if (body != null)
+        {
+            body.isKinematic = false;
+        }
     }
 }
