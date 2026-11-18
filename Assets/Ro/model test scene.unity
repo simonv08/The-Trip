@@ -167,15 +167,80 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 364989372844890091, guid: a7dcbc71855322c45a643824459d8be0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
     - target: {fileID: 919132149155446097, guid: a7dcbc71855322c45a643824459d8be0, type: 3}
       propertyPath: m_Name
       value: puzzel1_kast
       objectReference: {fileID: 0}
+    - target: {fileID: 6530478144035988919, guid: a7dcbc71855322c45a643824459d8be0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7dcbc71855322c45a643824459d8be0, type: 3}
+--- !u!1001 &777322880
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6682296
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4941447
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
+      propertyPath: m_Name
+      value: puzzel 2 blockout
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6602aea86abeec49a1eb73d7022f015, type: 3}
 --- !u!1001 &1556818859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ce8eb6e07c964f441a87fb3d0647a2f8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
     - target: {fileID: 919132149155446097, guid: ce8eb6e07c964f441a87fb3d0647a2f8, type: 3}
       propertyPath: m_Name
       value: puzzel1_zaklamp
@@ -281,10 +350,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7809890622283852297, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: -6092064157490534428, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: -5575950330181968218, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: -4465786362367918352, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: -3379107697464015166, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: -510929861889938061, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
     - target: {fileID: 919132149155446097, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
       propertyPath: m_Name
       value: puzzel1_blokken
       objectReference: {fileID: 0}
+    - target: {fileID: 1119200877842464944, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: 3006495976198544816, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
+    - target: {fileID: 8572146749799746933, guid: 29580e1a3c2751c43aa15827d2f8c696, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 723da1384d30ba04a8b9fa5c32f267af, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -488,3 +593,4 @@ SceneRoots:
   - {fileID: 1689577001}
   - {fileID: 1556818859}
   - {fileID: 474580273}
+  - {fileID: 777322880}
