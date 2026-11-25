@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Anchor
   - Grabbable
+  - Element 1
+  - Element 2
+  - Element 3
+  - VerkeerdElement
   layers:
   - Default
   - TransparentFX
