@@ -115,16 +115,16 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StrengthScale: 50
+    - _StrengthScale: 1
     - _Surface: 1
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.55888706, g: 0.19892481, b: 0.7584905, a: 1}
+    - _BaseColor: {r: 0.47273043, g: 0.91191894, b: 0.9245283, a: 1}
     - _Color: {r: 1, g: 0.027336698, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LightDirection: {r: 0, g: 0, b: 1, a: 0}
-    - _LightPosition: {r: 15.76, g: 0.809, b: -4.96, a: 0}
+    - _LightDirection: {r: 1, g: 1.1368684e-13, b: -0.00000035762804, a: 0}
+    - _LightPosition: {r: 10.577, g: 1.2244011, b: 11.578, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
